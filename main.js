@@ -1,20 +1,17 @@
-function preload() {
-	world_start = loadSound("world_start.wav");
-	setSprites();
-	MarioAnimation();
+
+
+function setup(){
+	var canvas =  createCanvas(700,600);
+	canvas.parent('canvas');
+
+	video = createCapture(VIDEO);
+video.size(700, 600);
+video.hide();
+
 }
 
-function setup() {
-	canvas = createCanvas(1240,336);
-	instializeInSetup(mario);
-}
+	function draw(){
 
-function draw() {
-	game()
-}
-
-
-
-
-
-
+		background(0); 
+		image(video, 0, 0, 700, 600) } 
+	
